@@ -36,7 +36,7 @@ section.banner{
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	background: gray url("https://cdn.discordapp.com/attachments/798027620334960681/1045703400953749615/remoderma.png") center / cover no-repeat;
+	background: gray url("https://cdn.discordapp.com/attachments/888290179247374367/1047691359030620220/REMODERMA_-_Class_Meeting.png") center / cover no-repeat;
 }
 
 section.banner .gradient-banner {
@@ -262,7 +262,7 @@ footer .column3 a h2{
 	.kegiatan .content .content-isi .top img{
 		margin: auto;
 		width: auto;
-		height: 300px;
+		width: 50vw;
 		margin-top: 5%;
         margin-bottom: 3%;
 	}
