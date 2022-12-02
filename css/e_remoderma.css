@@ -247,8 +247,11 @@ footer .column3 a h2{
         padding: 3% 0;
 	}
 
+
     .kegiatan .content .content-isi {
-        width: 85%;
+        width: 95%;
+		padding: 1rem;
+		font-size: 90%;
     }
 
 	.kegiatan .content .content-isi .top{
