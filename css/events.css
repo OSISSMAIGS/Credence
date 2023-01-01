@@ -20,156 +20,57 @@ section.main .carousel, section.main .carousel .carousel-item{
     --size: 70vw;
     width: var(--size);
     height: calc(var(--size)*0.5625);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    flex-direction: column;
 }
+
+/* section.main .carousel, section.main .carousel .carousel-item h1{
+    background-color: black;
+    
+} */
 
 /* Events */
-#past-event-list {
-    margin-top: 5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 1rem;
-    padding-bottom: 2rem;
+section.event {
+    margin: 0 10vw;
 }
 
-#past-event-list h1{
+section.event a {
+    margin-top: 3rem;
+}
+
+section.event a:hover {
+    border: 0.3rem solid var(--pink);
+    /* border-radius: 1rem; */
+    box-shadow: 0 0 2rem var(--pink);
+}
+
+section.event img{
+    width: 30vw;
+}
+
+section.upcoming {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+h1.past{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
     font-weight: 700;
 }
 
-#event-1 {
-    background-color: var(--blue);
-    /*background-image: none;
-    background-repeat: no-repeat;
-    background-position: 58% 30%;*/
-    display: block;
-    padding: 2rem 1rem;
-    width: 90%;
-    height: 15rem;
-    border-radius: 1.5rem;
-    font-size: 3rem;
-    font-family: sans-serif;
-    margin-top: 2rem;
-
+section.past {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
-#event-1 > a {
-    text-decoration: none;
-    background-color: #aaa;
-    border-radius: 1rem;
-    width: 5rem;
-    height: 2rem;
-    text-align: center;
-    margin-top: 5rem;
-    margin-left: 80rem;
-}
 
-#event-2 {
-    background-color: var(--blue);
-    /*background-image: none;
-    background-repeat: no-repeat;
-    background-position: 58% 30%;*/
-    display: block;
-    padding: 2rem 1rem;
-    width: 90%;
-    height: 15rem;
-    border-radius: 1.5rem;
-    font-size: 3rem;
-    font-family: sans-serif;
-    margin-top: 2rem;
-
-}
-
-#event-2 a {
-    text-decoration: none;
-    background-color: #aaa;
-    border-radius: 1rem;
-    width: 5rem;
-    height: 2rem;
-    text-align: center;
-    margin-top: 5rem;
-    margin-left: 80rem;
-}
-
-#event-3 {
-    background-color: var(--blue);
-    /*background-image: none;
-    background-repeat: no-repeat;
-    background-position: 58% 30%;*/
-    display: block;
-    padding: 2rem 1rem;
-    width: 90%;
-    height: 15rem;
-    border-radius: 1.5rem;
-    font-size: 3rem;
-    font-family: sans-serif;
-    margin-top: 2rem;
-
-}
-
-#event-3 a {
-    text-decoration: none;
-    background-color: #aaa;
-    border-radius: 1rem;
-    width: 5rem;
-    height: 2rem;
-    text-align: center;
-    margin-top: 5rem;
-    margin-left: 80rem;
-}
-
-#event-4 {
-    background-color: var(--blue);
-    /*background-image: none;
-    background-repeat: no-repeat;
-    background-position: 58% 30%;*/
-    display: block;
-    padding: 2rem 1rem;
-    width: 90%;
-    height: 15rem;
-    border-radius: 1.5rem;
-    font-size: 3rem;
-    font-family: sans-serif;
-    margin-top: 2rem;
-
-}
-
-#event-4 a {
-    text-decoration: none;
-    background-color: #aaa;
-    border-radius: 1rem;
-    width: 5rem;
-    height: 2rem;
-    text-align: center;
-    margin-top: 5rem;
-    margin-left: 80rem;
-}
-
-#event-5 {
-    background-color: var(--blue);
-    /*background-image: none;
-    background-repeat: no-repeat;
-    background-position: 58% 30%;*/
-    display: block;
-    padding: 2rem 1rem;
-    width: 90%;
-    height: 15rem;
-    border-radius: 1.5rem;
-    font-size: 3rem;
-    font-family: sans-serif;
-    margin-top: 2rem;
-
-}
-
-#event-5 a {
-    text-decoration: none;
-    background-color: #aaa;
-    border-radius: 1rem;
-    width: 5rem;
-    height: 2rem;
-    text-align: center;
-    margin-top: 5rem;
-    margin-left: 80rem;
-}
 
 @media screen and (max-width : 1100px) {
     section.main {
@@ -180,5 +81,19 @@ section.main .carousel, section.main .carousel .carousel-item{
         --size: 85vw;
         width: var(--size);
         height: calc(var(--size)*0.5625);
+    }
+
+    section.event {
+        margin: 0 5vw;
+    }
+
+    section.event img{
+        width: 40vw;
+    }
+}
+
+@media screen and (max-width : 590px) {
+    section.event img{
+        width: 70vw;
     }
 }
